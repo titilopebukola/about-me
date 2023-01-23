@@ -12,40 +12,40 @@ let height = prompt("What is your height?");
 
 switch (height.toLowerCase()) {
   case "50cm":
-    console.log("Your height was 50cm. That's too short.");
+    alert("Your height was 50cm. That's too short.");
     break;
     case "60cm":
-      console.log("Your height was 60cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 60cm. Uhmmm! I'm short of word!.");
     break;
     case "70cm":
-      console.log("Your height was 70cm. Uhmmm! Fair enough.");
+      alert("Your height was 70cm. Uhmmm! Fair enough.");
       break;
     case "80cm":
-      console.log("Your height was 80cm. Good to know!");
+      alert("Your height was 80cm. Good to know!");
       break;
     case "110cm":
-      console.log("Your height was 110cm. Great! I love that!");
+      alert("Your height was 110cm. Great! I love that!");
       break;
     case "120cm":
-      console.log("Your height was 120cm. Coo!.");
+      alert("Your height was 120cm. Coo!.");
       break;
     case "130cm":
-      console.log("Your height was 130cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 130cm. Uhmmm! I'm short of word!.");
       break;
     case "140cm":
-      console.log("Your height was 140cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 140cm. Uhmmm! I'm short of word!.");
       break;
     case "150cm":
-      console.log("Your height was 150cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 150cm. Uhmmm! I'm short of word!.");
       break;
     case "160cm":
-      console.log("Your height was 160cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 160cm. Uhmmm! I'm short of word!.");
       break;
     case "165cm":
-      console.log("Your height was 165cm. Uhmmm! I'm short of word!.");
+      alert("Your height was 165cm. Uhmmm! I'm short of word!.");
       break;
       default:
-        console.log("Pretty sure you are too tall. Have you thought about venturing into sport? \\__(_/");
+      alert("Pretty sure you are too tall. Have you thought about venturing into sport? \\__(_/");
 }
 
 function guessMyage() {
@@ -82,5 +82,31 @@ console.log("Yes! I'm currently job hunting" + work);
 
 alert("Cool! " + user + ". You're from " + place + ". What a beautiful place! " + "Uhmm! " + friend + ". Sounds like you got yourself a beautiful friend too. " + work + ". I might have something for you, click here to check");
 
-// function to submit users input
+// arrays
+// in array the first item is index 0, follow by 1
+let myArray = ["Titi", 30, "Pink"]
+
+console.log(myArray[2])
+// this will return "Pink"
+
+let myArray = ["Titi", 30, "Pink", ["Top", 23, "Red"]]
+
+let output = myArray[3][2];
+console.log(output);
+// this will return ["Top", 23, "Red"], "Pink"
+
+
+// comparison operators
+// == euqual to
+// <= less than or equal to
+// >= greater than or equal to
+// === strictly equal to (value and varriable type)
+// !== not equal to
+// !== strictly not equal to (not same value and variable type)
+
+
+// Logical Operators
+// && and
+// || or
+//  !a not
 
