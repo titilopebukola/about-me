@@ -22,7 +22,7 @@ switch (height.toLowerCase()) {
     alert("Your height was 50cm. That's too short.");
     break;
       default:
-      alert("Pretty sure you are too tall. Have you thought about venturing into sport? \\__(_/");
+      alert("Pretty sure you are too tall. Have you thought about venturing into sport?");
 }
 
 let user = prompt("What is your name?");
@@ -32,17 +32,94 @@ console.log("The user's name is " + user);
 let place = prompt("Where are you from?");
 console.log("I'm from Mexico" + place);
 
-let travel = prompt("Have you been to Dubai?");
-console.log("No! I haven't" + travel);
+alert("Cool! " + user + ". You're from " + place + ". What a beautiful place! ");
 
-let friend = prompt("Who is your best friend?");
-console.log("My best friend is Folusho! She is tall and beautiful" + friend);
+let music = prompt("What is my favourite music?").toLowerCase;
 
-let work = prompt("Are you open to job?");
-console.log("Yes! I'm currently job hunting" + work);
+let attemptsBlues = 3
 
-alert("Cool! " + user + ". You're from " + place + ". What a beautiful place! " + "Uhmm! " + friend + ". Sounds like you got yourself a beautiful friend too. " + work + ". I might have something for you, click here to check");
+while(music != "blues" && attemptsBlues > 0) {
+  console.log(attemptsBlues + "more attempts")
+  music = prompt("Nope, try again." + attemptsBlues + "attempts left");
+  attemptsBlues--;
+}
 
+let car = prompt("Which car do I drive?").toLowerCase;
+
+let attemptsBMW = 3
+
+while(car != "bmw" && attemptsBMW > 0) {
+  console.log(attemptsBlues + "more attempts")
+  car = prompt("Nope, try again." + attemptsBMW + "attempts left");
+  attemptsBMW--;
+}
+
+
+let food = prompt("What is my favourite food?").toLowerCase();
+
+let attemptsPizza = 3
+
+while(food != "pizza" && attemptsPizza > 0) {
+  console.log(attemptsPizza + "more attempts")
+  food = prompt("Nope, try again." + attemptsPizza + "attempts left");
+  attemptsPizza--;
+}
+
+let children = prompt("How many children do I have?").toLowerCase;
+
+let attempts2 = 3
+
+while(children != "2" && attempts2 > 0) {
+  console.log(attempts2 + "more attempts")
+  children = prompt("Nope, try again." + attempts2 + "attempts left");
+  attempts2--;
+}
+
+let boardgame = prompt("What is my favourite boardgame?").toLowerCase;
+
+let attemptsChess = 3
+
+while(boardgame != "chess" && attemptsChess > 0) {
+  console.log(attemptsChess + "more attempts")
+  boardgame = prompt("Nope, try again." + attemptsChess + "attempts left");
+  attemptsChess--;
+}
+
+
+// guess a number function
+
+var enterButton = document.getElementById('enterButton');
+var againButton = document.getElementById('againButton');
+var output = document.getElementById('outputText');
+
+var randomNumber = Math.ceil(Math.random()*100);
+
+function checkNumber(){
+  var input = document.getElementById('userInput').Value;
+  if(input == randomNumber){
+    output.innerHTML= "You guessed right "+ ", "+ ", it was "+ randomNumber;
+    output.style.color="green"
+  }
+  else if(input>randomNumber && input<100){
+    output.style.color = "You guessed too high";
+  }
+  else if(input<randomNumber && input>1){
+    output.innerHTML = "You guessed too low";
+  }
+  else if(input<1){
+    output.innerHTML = "Higher, it has to be between 1 and 100";
+  }
+  else if(isNaN(input)){
+    output.innerHTML = "That's not a number!";
+  }
+  else{
+    output.innerHTML = "Lower, it has to be between 1 and 100";
+  }
+}
+enterButton.addEventListener('click', checkNumber);
+againButton.addEventListener('click', function(){
+  location.reload();
+})
 
 
 let userPoints = 0;
@@ -77,26 +154,7 @@ while(question != "rubgy" && attempts > 0) {
   attempts--;
 }
 
-let food = prompt("What is my favourite food?").toLowerCase();
 
-let attemptsPizza = 3
-
-while(food != "pizza" && attemptsPizza > 0) {
-  console.log(attemptsPizza + "more attempts")
-  food = prompt("Nope, try again." + attemptsPizza + "attempts left");
-  attemptsPizza--;
-}
-
-
-let music = prompt("What is my favourite music?").toLowerCase;
-
-let attemptsBlues = 3
-
-while(music != "blues" && attemptsBlues > 0) {
-  console.log(attemptsBlues + "more attempts")
-  music = prompt("Nope, try again." + attempts + "attempts left");
-  attemptsBlues--;
-}
 
 
 let colourQuestion = prompt("What is my favourite colour?.").toLowerCase();

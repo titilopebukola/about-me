@@ -1,0 +1,97 @@
+## HTML Lists, Control Flow with JS, and the CSS Box Model.
+
+The following topics are fundamental to coding and are critical to making better design decisions for my website.
+
+1. Unordered list — Used to create a list of related items, in no particular order. An unordered list created using the <ul> element, and each list item starts with the <li> element.
+2. Ordered list — Used to create a list of related items, in a specific order. An ordered list created using the <ol> element, and each list item starts with the <li> element.
+3. It can be done with the help of the CSS list-style or list-style-type properties.
+4. The numbering of items in an ordered list typically starts with 1. However, it can be changed by using the "start attribute".
+5. The bullet type in the unordered list can be changed using the CSS "list-style-type property".
+
+## CSS Margin
+
+Margins determine the space surrounding an element. It can be use for the following
+
+- Change an Element’s Position on the Page.
+- Set the Distance Between Nearby Elements.
+- Overlap Elements
+
+## CSS Padding
+
+Padding determines how content looks within its respective element. It can be used to achieve the following effects:
+
+- Add Space Between Content and Its Border.
+- Change the size of an element.
+
+## CSS Box Model
+
+The CSS box model is used for page design and layout. To see how margins and padding work together to set spacing around an element’s content, we can also use the CSS box model. Essentially, every HTML element in a document is wrapped inside a layered box that consists of the margin, border, padding, and content:
+
+## The Box Model Story
+
+Margin and padding are like unidentical twins in a family. They beautify the page by setting space around an element's content. They both have four sides (top, right, bottom, and left). However, Margin and padding are always parts of an element, even if there’s no visible border.
+
+## HTML Elements Box
+
+Every HTML element in a document is wrapped inside a layered box that consists of the margin, border, padding, and content.
+
+- The border is the layer of the CSS box model that sits between margin and padding
+- Margin and padding are always parts of an element, even if there’s no visible border
+
+## What data types can you store inside of an Array?
+
+- Integer Array: An array with elements of the numeric data type.
+- Byte Array: A binary data having a 8-bit size. The byte array consists of elements of type ‘byte’ and is mostly used to store binary data.
+- Boolean array in Java only stores Boolean type values i.e. either true or false. The default value stored in the Boolean array is ‘false’.
+- Character arrays or Char arrays in Java contain single characters as its elements. Character arrays act as character buffers and can easily be altered, unlike Strings. Character arrays do not need allocations and are faster and efficient.
+- A string in Java is a sequence of characters. For example, “hello” is a string in Java. An array of a string is a collection of strings. When the array of strings is not initialized or assigned values, the default is null.
+- Empty arrays in Java i.e. you can define an array in Java with 0 as dimension.
+  int[] intArray = new int[0]; //compiles fine.
+
+## Shorthand Operators and Assignment in Java
+
+- Assignment x = f() x = f()
+- Addition assignment x += f() x = x + f()
+- Subtraction assignment x -= f() x = x - f()
+- Multiplication assignment x _= f() x = x _ f()
+- Division assignment x /= f() x = x / f()
+- Remainder assignment x %= f() x = x % f()
+- Exponentiation assignment x **= f() x = x ** f()
+- Left shift assignment x <<= f() x = x << f()
+- Right shift assignment x >>= f() x = x >> f()
+- Unsigned right shift assignment x >>>= f() x = x >>> f()
+- Bitwise AND assignment x &= f() x = x & f()
+- Bitwise XOR assignment x ^= f() x = x ^ f()
+- Bitwise OR assignment x |= f() x = x | f()
+- Logical AND assignment x &&= f() x && (x = f())
+- Logical OR assignment x ||= f() x || (x = f())
+- Nullish coalescing assignment x ??= f() x ?? (x = f())
+
+### Read the code below and evaluate the last expression and explain what the result would be and why.
+
+let a = 10;
+let b = 'dog';
+let c = false;
+
+// evaluate this
+(a + c) + b;
+It will return false. There are 3 data types, number, string and boolean. It is impossible to combine these together and get a true value.
+
+### Describe a real world example of when a conditional statement should be used in a JavaScript program.
+
+A conditional statement can be use for signing in or logging into an account. For example; If a user type correct email address and password, then grant access, else, prompt the user "wrong password". Allowed 3 attempts, if the user made the 4th attempts, block the user for 10 minutes.
+
+### Give an example of when a Loop is useful in JavaScript.
+
+Loops are used to repeat a block of code. For example, to show a message 100 times.
+
+## Things I want to know more about
+
+- To understand loops more
+- To be able to write function better
+- To understand CSS more
+
+## HOW?
+
+- Practice out of box
+- concentrate more in class

@@ -134,3 +134,27 @@ form input{
   outline: none;
 }
 
+#container-1{
+  margin: auto;
+  border: 50px solid aliceblue;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  height: 260px;
+  width: 600px;
+  background-color: rgb(127, 127, 203);
+}
+p{
+  color: #fff;
+}
+#userInput{
+  width: 170px;
+  height: 23px;
+}
+#outputText{
+  color: rgb(179, 19, 19);
+}
+
+img{
+  justify-content: center;
+}
