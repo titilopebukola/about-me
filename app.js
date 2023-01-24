@@ -85,8 +85,16 @@ while(boardgame != "chess" && attemptsChess > 0) {
   attemptsChess--;
 }
 
+let musicQuestion = confirm("🎵 Do you love me?🎵");
 
-// guess a number function
+if (musicQuestion == true) {
+  alert("I know.");
+  userPoints++;
+} else {
+  alert("Awww 😔");
+}
+
+alert("Well done " + user + "! You scored " + userPoints + "/2");
 
 var enterButton = document.getElementById('enterButton');
 var againButton = document.getElementById('againButton');
@@ -97,23 +105,23 @@ var randomNumber = Math.ceil(Math.random()*100);
 function checkNumber(){
   var input = document.getElementById('userInput').Value;
   if(input == randomNumber){
-    output.innerHTML= "You guessed right "+ ", "+ ", it was "+ randomNumber;
+    output.innerHTML="You guessed right "+ ", "+ ", it was "+ randomNumber;
     output.style.color="green"
   }
   else if(input>randomNumber && input<100){
-    output.style.color = "You guessed too high";
+    output.style.color="You guessed too high";
   }
   else if(input<randomNumber && input>1){
-    output.innerHTML = "You guessed too low";
+    output.innerHTML="You guessed too low";
   }
   else if(input<1){
-    output.innerHTML = "Higher, it has to be between 1 and 100";
+    output.innerHTML="Higher, it has to be between 1 and 100";
   }
   else if(isNaN(input)){
-    output.innerHTML = "That's not a number!";
+    output.innerHTML="That's not a number!";
   }
   else{
-    output.innerHTML = "Lower, it has to be between 1 and 100";
+    output.innerHTML="Lower, it has to be between 1 and 100";
   }
 }
 enterButton.addEventListener('click', checkNumber);
@@ -182,16 +190,20 @@ for (let i = 0; i < myCountry.length; i++) {
 }
 
 
-let musicQuestion = confirm("Do you love me?");
+let foodQuestion = prompt("What is one my favourite foods?.").toLowerCase();
 
-if (musicQuestion == true) {
-alert("I know.");
-userPoints++;
-} else {
-  alert("Aww");
+let foodsILike = ["dumplings", "popcorn", "pizza", "pasta"];
+
+for (let i = 0; i < foodsILike.length; i++) {
+  if (foodQuestion == foodsILike[i]) {
+    alert("Yes I love " + foodQuestion + "!");
+    userPoints++;
+  }
 }
 
-alert("Well done " + user + "! You scored " + userPoints + "/2");
+
+
+
 
 
 // arrays
