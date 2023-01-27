@@ -1,8 +1,39 @@
+let userPoints = 0;
+
+alert("Welcome to my guessing game!");
+let user = prompt("What is your name?");
+document.write(user);
+console.log(user);
+
+while (!user) {
+  user = prompt("I really need your name, please give it.");
+}
+
+if (user == "titi") {
+  alert("Ugh, I knew it was you " + user + "!");
+}
+
+alert("Hello there" + "! I'm so glad you decided to visit my website!");
+
+function aboutMe() {
+  let aboutMe = confirm("would you like to learn about me?");
+
+  if (aboutMe == true) {
+    alert(
+      "Cool! " +
+        user +
+        "please answer these questions to know about me. please answer OK for yes, and cancel for NO"
+    );
+  } else {
+    alert("why dont you want to know about me?");
+  }
+}
+
 function guessMyage() {
   let answer;
 
   while (answer != 35) {
-    answer = prompt("Guess my age between 15-45", "35");
+    answer = prompt("Guess my age between 15-45");
 
     if (answer != 35) {
       alert("Sorry! You can do better");
@@ -142,24 +173,6 @@ againButton.addEventListener("click", function () {
   location.reload();
 });
 
-let userPoints = 0;
-
-alert("Welcome to my guessing game!");
-
-console.log(user);
-// ensure the user actually use their name
-while (!player) {
-  user = prompt("I really need your name, please give it.");
-}
-
-//
-if (user == "Ben.");
-{
-  alert("Ugh, I knew it was you Ben.");
-}
-
-alert("Hello there" + "! I'm so glad you decided to visit my website!");
-
 // while loops
 function questionSport() {
   let question = prompt("What is my favourite sport?").toLowerCase();
@@ -265,7 +278,7 @@ while (number < 3) {
   console.log(number);
   number++;
 }
-
+aboutMe();
 questionHeight();
 questionName();
 questionPlace();
