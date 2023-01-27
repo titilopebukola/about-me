@@ -13,88 +13,106 @@ function guessMyage() {
   }
 }
 
-let height = prompt("What is your height?");
+function questionHeight() {
+  let height = prompt("What is your height?");
 
-switch (height.toLowerCase()) {
-  case "50cm":
-    alert("Your height was 50cm. That's too short.");
-    break;
-  default:
-    alert(
-      "Pretty sure you are too tall. Have you thought about venturing into sport?"
-    );
+  switch (height.toLowerCase()) {
+    case "50cm":
+      alert("Your height was 50cm. That's too short.");
+      break;
+    default:
+      alert(
+        "Pretty sure you are too tall. Have you thought about venturing into sport?"
+      );
+  }
 }
 
-let user = prompt("What is your name?");
-console.log("The user's name is " + user);
-
-let place = prompt("Where are you from?");
-console.log("I'm from Mexico" + place);
-
-alert(
-  "Cool! " + user + ". You're from " + place + ". What a beautiful place! "
-);
-
-let music = prompt("What is my favourite music?").toLowerCase;
-
-let attemptsBlues = 3;
-
-while (music != "blues" && attemptsBlues > 0) {
-  console.log(attemptsBlues + "more attempts");
-  music = prompt("Nope, try again." + attemptsBlues + "attempts left");
-  attemptsBlues--;
+function questionName() {
+  let user = prompt("What is your name?");
+  console.log("The user's name is " + user);
 }
 
-let car = prompt("Which car do I drive?").toLowerCase;
+function questionPlace() {
+  let place = prompt("Where are you from?");
+  console.log("I'm from Mexico" + place);
 
-let attemptsBMW = 3;
-
-while (car != "bmw" && attemptsBMW > 0) {
-  console.log(attemptsBlues + "more attempts");
-  car = prompt("Nope, try again." + attemptsBMW + "attempts left");
-  attemptsBMW--;
+  alert(
+    "Cool! " + user + ". You're from " + place + ". What a beautiful place! "
+  );
 }
 
-let food = prompt("What is my favourite food?").toLowerCase();
+function questionMusic() {
+  let music = prompt("What is my favourite music?").toLowerCase;
 
-let attemptsPizza = 3;
+  let attemptsBlues = 3;
 
-while (food != "pizza" && attemptsPizza > 0) {
-  console.log(attemptsPizza + "more attempts");
-  food = prompt("Nope, try again." + attemptsPizza + "attempts left");
-  attemptsPizza--;
+  while (music != "blues" && attemptsBlues > 0) {
+    console.log(attemptsBlues + "more attempts");
+    music = prompt("Nope, try again." + attemptsBlues + "attempts left");
+    attemptsBlues--;
+  }
 }
 
-let children = prompt("How many children do I have?").toLowerCase;
+function questionCar() {
+  let car = prompt("Which car do I drive?").toLowerCase;
 
-let attempts2 = 3;
+  let attemptsBMW = 3;
 
-while (children != "2" && attempts2 > 0) {
-  console.log(attempts2 + "more attempts");
-  children = prompt("Nope, try again." + attempts2 + "attempts left");
-  attempts2--;
+  while (car != "bmw" && attemptsBMW > 0) {
+    console.log(attemptsBlues + "more attempts");
+    car = prompt("Nope, try again." + attemptsBMW + "attempts left");
+    attemptsBMW--;
+  }
 }
 
-let boardgame = prompt("What is my favourite boardgame?").toLowerCase;
+function questionFood() {
+  let food = prompt("What is my favourite food?").toLowerCase();
 
-let attemptsChess = 3;
+  let attemptsPizza = 3;
 
-while (boardgame != "chess" && attemptsChess > 0) {
-  console.log(attemptsChess + "more attempts");
-  boardgame = prompt("Nope, try again." + attemptsChess + "attempts left");
-  attemptsChess--;
+  while (food != "pizza" && attemptsPizza > 0) {
+    console.log(attemptsPizza + "more attempts");
+    food = prompt("Nope, try again." + attemptsPizza + "attempts left");
+    attemptsPizza--;
+  }
 }
 
-let musicQuestion = confirm("🎵 Do you love me?🎵");
+function questionChildren() {
+  let children = prompt("How many children do I have?").toLowerCase;
 
-if (musicQuestion == true) {
-  alert("I know.");
-  userPoints++;
-} else {
-  alert("Awww 😔");
+  let attempts2 = 3;
+
+  while (children != "2" && attempts2 > 0) {
+    console.log(attempts2 + "more attempts");
+    children = prompt("Nope, try again." + attempts2 + "attempts left");
+    attempts2--;
+  }
 }
 
-alert("Well done " + user + "! You scored " + userPoints + "/2");
+function questionBoardgame() {
+  let boardgame = prompt("What is my favourite boardgame?").toLowerCase;
+
+  let attemptsChess = 3;
+
+  while (boardgame != "chess" && attemptsChess > 0) {
+    console.log(attemptsChess + "more attempts");
+    boardgame = prompt("Nope, try again." + attemptsChess + "attempts left");
+    attemptsChess--;
+  }
+}
+
+function questionMusic1() {
+  let musicQuestion = confirm("🎵 Do you love me?🎵");
+
+  if (musicQuestion == true) {
+    alert("I know.");
+    userPoints++;
+  } else {
+    alert("Awww 😔");
+  }
+
+  alert("Well done " + user + "! You scored " + userPoints + "/2");
+}
 
 var enterButton = document.getElementById("enterButton");
 var againButton = document.getElementById("againButton");
@@ -143,51 +161,57 @@ if (user == "Ben.");
 alert("Hello there" + "! I'm so glad you decided to visit my website!");
 
 // while loops
-let question = prompt("What is my favourite sport?").toLowerCase();
+function questionSport() {
+  let question = prompt("What is my favourite sport?").toLowerCase();
 
-let attempts = 3;
+  let attempts = 3;
 
-// adding number of attempts
-while (question != "rubgy" && attempts > 0) {
-  console.log(attempts + "more attempts");
-  question = prompt("Nope, try again." + attempts + "attempts left");
-  attempts--;
-}
-
-let colourQuestion = prompt("What is my favourite colour?.").toLowerCase();
-
-let colourILike = ("Green", "Pink", "Red", "Blue");
-
-for (let i = 0; i < colourILike.length; i++) {
-  if (colourQuestion == colourILike[i]) {
-    alert("Yes I love " + colourQuestion + "!");
-    userPoints++;
+  // adding number of attempts
+  while (question != "rubgy" && attempts > 0) {
+    console.log(attempts + "more attempts");
+    question = prompt("Nope, try again." + attempts + "attempts left");
+    attempts--;
   }
 }
 
-let countryQuestion = prompt("Can you guess my country?.").toLowerCase();
+function questionColour() {
+  let colourQuestion = prompt("What is my favourite colour?.").toLowerCase();
 
-let myCountry = "Nigeria";
+  let colourILike = ("Green", "Pink", "Red", "Blue");
 
-for (let i = 0; i < myCountry.length; i++) {
-  if (colourQuestion == colourILike[i]) {
-    alert("Great! " + colourQuestion + "my country");
-    userPoints++;
+  for (let i = 0; i < colourILike.length; i++) {
+    if (colourQuestion == colourILike[i]) {
+      alert("Yes I love " + colourQuestion + "!");
+      userPoints++;
+    }
   }
 }
 
-let foodQuestion = prompt("What is one my favourite foods?.").toLowerCase();
+function questionCountry() {
+  let countryQuestion = prompt("Can you guess my country?.").toLowerCase();
 
-let foodsILike = ["dumplings", "popcorn", "pizza", "pasta"];
+  let myCountry = "Nigeria";
 
-for (let i = 0; i < foodsILike.length; i++) {
-  if (foodQuestion == foodsILike[i]) {
-    alert("Yes I love " + foodQuestion + "!");
-    userPoints++;
+  for (let i = 0; i < myCountry.length; i++) {
+    if (colourQuestion == colourILike[i]) {
+      alert("Great! " + colourQuestion + "my country");
+      userPoints++;
+    }
   }
 }
 
-// write a for loop that the number 1-10 in the console.log
+function questionFood1() {
+  let foodQuestion = prompt("What is one my favourite foods?.").toLowerCase();
+
+  let foodsILike = ["dumplings", "popcorn", "pizza", "pasta"];
+
+  for (let i = 0; i < foodsILike.length; i++) {
+    if (foodQuestion == foodsILike[i]) {
+      alert("Yes I love " + foodQuestion + "!");
+      userPoints++;
+    }
+  }
+}
 
 // arrays
 // in array the first item is index 0, follow by 1
@@ -241,3 +265,18 @@ while (number < 3) {
   console.log(number);
   number++;
 }
+
+questionHeight();
+questionName();
+questionPlace();
+questionMusic();
+questionCar();
+questionFood();
+questionChildren();
+questionBoardgame();
+questionMusic1();
+checkNumber();
+questionSport();
+questionColour();
+questionCountry();
+questionFood1();
