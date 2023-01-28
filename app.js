@@ -13,7 +13,7 @@ if (user == "titi") {
   alert("Ugh, I knew it was you " + user + "!");
 }
 
-alert("Hello there" + "! I'm so glad you decided to visit my website!");
+alert("Hello " + user + "! I'm so glad you decided to visit my website!");
 
 function aboutMe() {
   let aboutMe = confirm("would you like to learn about me?");
@@ -44,17 +44,43 @@ function guessMyage() {
   }
 }
 
-function questionHeight() {
-  let height = prompt("What is your height?");
+function guessMyheight() {
+  let answer;
 
-  switch (height.toLowerCase()) {
-    case "50cm":
-      alert("Your height was 50cm. That's too short.");
-      break;
-    default:
-      alert(
-        "Pretty sure you are too tall. Have you thought about venturing into sport?"
-      );
+  while (answer != 164) {
+    answer = prompt("Can you guess my height between 160cm-165cm?");
+
+    if (answer != 164) {
+      alert("sorry! You guessed wrong");
+    } else {
+      alert("Well done!");
+      document.write("You got it");
+    }
+  }
+}
+
+function questionCar() {
+  let car = prompt("Which car do I drive?").toLowerCase;
+
+  let attemptsBMW = 3;
+
+  while (car != "bmw" && attemptsBMW > 0) {
+    console.log(attemptsBlues + "more attempts");
+    car = prompt("Nope, try again." + attemptsBMW + "attempts left");
+    attemptsBMW--;
+  }
+}
+
+function questionFood1() {
+  let foodQuestion = prompt("What is one my favourite foods?.").toLowerCase();
+
+  let foodsILike = ["dumplings", "popcorn", "pizza", "pasta"];
+
+  for (let i = 0; i < foodsILike.length; i++) {
+    if (foodQuestion == foodsILike[i]) {
+      alert("Yes I love " + foodQuestion + "!");
+      userPoints++;
+    }
   }
 }
 
@@ -279,6 +305,7 @@ while (number < 3) {
   number++;
 }
 aboutMe();
+guessMyheight();
 questionHeight();
 questionName();
 questionPlace();
