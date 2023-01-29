@@ -19,11 +19,7 @@ function aboutMe() {
   let aboutMe = confirm("would you like to learn about me?");
 
   if (aboutMe == true) {
-    alert(
-      "Cool! " +
-        user +
-        "please answer these questions to know about me. please answer OK for yes, and cancel for NO"
-    );
+    alert("Cool! " + user + " please answer these questions to know about me.");
   } else {
     alert("why dont you want to know about me?");
   }
